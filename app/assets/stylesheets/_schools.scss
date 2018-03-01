@@ -1,6 +1,6 @@
 [data-controller=schools] {
   main {
-    max-width: 120rem;
+    max-width: $content-width;
   }
 }
 
@@ -139,11 +139,11 @@
     @include desktop {
       float: left;
       width: 50%;
-      padding-right: 6rem;
+      padding-right: 3rem;
 
       &:last-of-type {
         padding-right: 0;
-        padding-left: 6rem;
+        padding-left: 3rem;
       }
     }
   }
