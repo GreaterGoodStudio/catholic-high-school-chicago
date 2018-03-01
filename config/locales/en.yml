@@ -48,7 +48,7 @@ en:
     tuition_merit_label: Does this school offer merit based scholarships?
     tuition_assistance_label: Does this school offer financial aid or tuition assistance based on financial aid?
     tuition_private_label: The following private scholarship opportunities are compatible with this school
-    tuition_learn_more: To learn more about scholarships and financial aid at Fenwick High School
+    tuition_learn_more: To learn more about scholarships and financial aid at %{name}
   search:
     enter_zip: To begin, enter your ZIP code
     go: Go

@@ -6,7 +6,7 @@ class SchoolsController < ApplicationController
 
   def show
     @school = School.friendly.find(params[:id])
-    @calendar_events = CalendarEvent.for_school(@school)
+    @calendar_events = CalendarEvent.upcoming.for_school(@school)
   end
 
   private

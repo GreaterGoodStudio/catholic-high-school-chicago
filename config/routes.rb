@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     get "/search/:token", to: "search#index", constraints: { token: /.*/ }, as: :bookmark
 
     # Static pages
-    get "/pages/:id", to: "high_voltage/pages#show", as: :page, format: false
+    get "/:id", to: "high_voltage/pages#show", as: :page, format: false
 
     root to: "search#index"
   end

@@ -10,6 +10,7 @@ class CalendarEvent < ApplicationRecord
 
   default_scope { order(starts_at: :asc) }
   scope :universal, -> { where(school: nil) }
+  scope :upcoming, -> { where("starts_at >= ?", Time.now.beginning_of_day) }
 
   def self.for_school(school)
     # Include general events too

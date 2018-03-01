@@ -6,7 +6,7 @@
     <p><%= t("apply.intro") %></p>
     <p>(<%= t("apply.note") %>)</p>
 
-    <% CalendarEvent.universal.group_by(&:name).each do |name, events|  %>
+    <% CalendarEvent.upcoming.universal.group_by(&:name).each do |name, events|  %>
       <div class="calendar-event-group">
         <strong><%= name %></strong>
         <%= render partial: "/calendar_events/calendar_event", collection: events %>

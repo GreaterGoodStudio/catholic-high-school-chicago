@@ -1,5 +1,7 @@
 ActiveAdmin.register User do
-  permit_params :id, :email, :password, :password_confirmation
+  actions :all, :except => [:show]
+  config.sort_order = "name_asc"
+  permit_params :id, :name, :email, :password, :password_confirmation, :admin
 
   ####################
   # Index Page       #

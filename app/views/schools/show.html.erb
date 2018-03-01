@@ -103,7 +103,7 @@
           <%= @school.tuition_private %>
         </p>
 
-        <p><%= t("schools.tuition_learn_more") %>, <%= link_to t("click_here"), @school.tuition_link, target: "_blank" %>.</p>
+        <p><%= t("schools.tuition_learn_more", name: @school.name) %>, <%= link_to t("click_here"), @school.tuition_link, target: "_blank" %>.</p>
       </div>
     </div>
 
