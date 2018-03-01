@@ -1,0 +1,5 @@
+<div class="school school-summary">
+  <h5><%= school.name %></h5>
+  <p class="address"><%= school.address %></p>
+  <%= link_to t("schools.more_info"), school_path(school), class: "btn btn-block", title: school.name %>
+</div>

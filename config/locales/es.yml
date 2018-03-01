@@ -1,0 +1,172 @@
+es:
+  title: Secundaria Católica Chicago
+  header:
+    title_html: <span>Secundaria Católica</span> Chicago
+    find_matches: Encontrar Escuelas de Mi Interes
+    apply: Aplicar
+    schools: Escuelas
+    scholarships: Becas
+    alt_locale: English
+    search: Buscar
+  footer:
+    copyright: Todos los derechos recervados
+    brought_by: Traído a usted por
+  click_here: haga clic aquí
+  apply:
+    intro: Al igual que con cualquier otra decisión importante, hay cosas que debes recordar cuando aplicas a una escuela secundaria Católica. Aquí hay una lista de fechas importantes para anotar y usar mientras hace sus planes para asistir a la escuela secundaria.
+    note: Tenga en cuenta que las fechas se actualizan para cada año escolar.
+    important_dates: Fechas importantes para recordar este año
+    how_to_apply: Como aplicar a una Secundaria Católica en Chicago
+  greeting:
+    header: ¡Hola!
+    body: Te estás preparando para comenzar la escuela secundaria y debes encontrar la adecuada para ti. Al unir algunos de los factores más importantes para ti y tu familia, le daremos la oportunidad de descubrir qué escuela se ajusta mejor a sus necesidades.
+    close: Empieza
+  scholarships:
+    title: Becas de apoyo para la escuela secundaria
+  schools:
+    more_info: Más información
+    back: Volver a la Búsqueda
+    get_directions: Direcciones de como llegar
+    add_to_calendar: Agregar al calendario
+    add_all_to_calendar: Agregar todas las fechas a mi calendario
+    dates_to_remember: Fechas para Recordar
+    shadowing: Observación
+    shadowing_label: Para obtener más información sobre observación en %{name} y para programar su día de observación
+    students: Estudiantes
+    acceptance: Aceptación
+    tuition_and_aid: Colegiatura y ayuda financiera
+    transportation: Transportación
+    academics: Académica
+    extracurriculars: Extracurriculares
+    athletics: Deportes
+    corrections: ¿Notaste algo incorrecto? Si desea solicitar un cambio, haga clic aquí.
+    bus_lines: Líneas de bus
+    l_lines: Lineas ‘L’
+    metra_lines: Lineas de la Metra
+    provide_transportation: ¿Esta escuela proporciona su propio transporte?
+    tuition_cost_label: "Colegiatura para 2017-2018 el año escolar es"
+    tuition_merit_label: ¿Ofrece esta escuela becas basadas en el mérito?
+    tuition_assistance_label: ¿Ofrece esta escuela ayuda financiera o asistencia financiera basada en la ayuda financiera?
+    tuition_private_label: Las siguientes oportunidades de becas privadas son compatibles con esta escuela
+    tuition_learn_more: Para obtener más información sobre becas y ayuda financiera en
+  search:
+    enter_zip: Para comenzar, ingrese su código postal
+    go: Ir
+    select_criteria: Seleccione todos los criterios a continuación que sean importantes para ti. Puede sdejar secciones en blanco.
+    change_criteria: Cambiar mis criterios de búsqueda
+    schools_match_criteria: coinciden con tus criterios
+  search_filters:
+    population_total:
+      label: Tamaño de la escuela
+      options:
+        - Más de 500 estudiantes
+        - Entre 200 y 500 estudiantes
+        - Menos de 500 estudiantes
+    population_makeup:
+      label: Población estudiantil
+      options:
+        - Escuela Mixta
+        - Solo Mujeres
+        - Solo Hombres
+    transportation_options:
+      label: Opciones de transporte
+      options:
+        - Tránsito público (CTA, PACE o Metra)
+        - Autobús escolar
+    programming_support:
+      label: Programación de apoyo
+      options:
+        - Inglés como segundo idioma (ESL)
+        - Asesoramiento posterior a la Escuela Secundaria
+        - Apoyo para las Diferencias de Aprendizaje
+        - Tutoría
+        - Consejería de salud mental
+        - Programas de Justicia Restaurativa
+        - Programa de estudio de trabajo corporativo
+    programming_academic:
+      label: Programación académica
+      options:
+        - Programa IB
+        - Historia del arte AP
+        - Biología AP
+        - Cálculo AP
+        - Química AP
+        - Chino AP
+        - Ciencias de la Computación AP
+        - Economía AP
+        - Inglés AP
+        - Estudios Ambientales AP
+        - Historia Europea de AP
+        - Francés AP
+        - Alemán AP
+        - Gobierno y política de AP
+        - Geografía Humana AP
+        - Italiano AP
+        - Japonés AP
+        - Latin AP
+        - Teoría de la música AP
+        - Física AP
+        - Psicología AP
+        - Español AP
+        - Estadísticas AP
+        - Artee de Estudio AP
+        - Historia de los Estados Unidos AP
+        - Historia mundial AP
+        - Entrenamiento vocacional
+        - Clases en línea
+        - Escuela de Verano
+        - Recuperación de crédito
+        - Inscripción doble o crédito
+        - Estudiar en el Extranjero
+        - Sevicio de aprendizaje
+    programming_extracurricular:
+      label: Programación estracurricular
+      options:
+        - Drama
+        - Coro
+        - Sociedad Nacional de Honor
+        - Clubes STEM
+        - Codificación
+        - Robótica
+        - Arte
+        - Banda / Orquesta
+        - Idioma extranjero
+        - Student Irvernment
+        - Negocios / Emprendimiento
+    programming_athletic:
+      label: Programación atlética
+      options:
+        - Bádminton
+        - Béisbol
+        - Baloncesto
+        - Boliche
+        - Porristas
+        - Buceo
+        - Esgrima
+        - Pesca
+        - Fútbol de bandera
+        - Fútbol Americano
+        - Irlf
+        - Gimnasia
+        - Lacrosse
+        - Remo / Tripulación
+        - Rugby
+        - Navegación
+        - Fútbol
+        - Sofbol
+        - Natación
+        - Tenis
+        - Atletismo
+        - Voleibol
+        - Polo Acuático
+        - Lucha
+  activerecord:
+    models:
+      faq:
+        one: Pregunta frecuente sobre aplicaciones
+        other: Pregunta frecuente sobre aplicacioness
+  date_range:
+    same_day: "%{dow}, %{month} %{from_day}, %{year} at %{from_time}%{sep}%{until_time}"
+    same_month: "%{month} %{from_day}%{sep}%{until_day}, %{year}"
+    different_months_same_year: "%{from_month} %{from_day}%{sep}%{until_month} %{until_day}, %{year}"
+    different_years: "%{from_month} %{from_day}, %{from_year}%{sep}%{until_month} %{until_day}, %{until_year}"

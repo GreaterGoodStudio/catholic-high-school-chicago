@@ -1,0 +1,45 @@
+#footer {
+  font-weight: 600;
+  color: $white;
+  background: image-url('footer.jpg') center top no-repeat $gold;
+  background-size: 100% auto;
+
+  ul {
+    padding: 6rem 3rem 3rem;
+    align-items: center;
+  }
+
+  li {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .bsf {
+    vertical-align: middle;
+    width: 8rem;
+  }
+
+  @include desktop {
+    ul {
+      -js-display: flex;
+      display: flex;
+    }
+
+    li {
+      flex: 1;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        text-align: left;
+      }
+
+      &:last-of-type {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<div class="schools-all">
+  <% if @query %>
+    <h2>Search results for: <span><%= @query %></span></h2>
+  <% end %>
+
+  <%= render @schools %>
+</div>

@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  font-weight: 600;
+  background: $gold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  &.btn-block {
+    display: block;
+  }
+}

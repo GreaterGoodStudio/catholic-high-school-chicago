@@ -1,0 +1,82 @@
+form {
+  .form-group {
+    margin-bottom: 2rem;
+  }
+
+  label {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1em;
+    font-family: $font-sans;
+    color: $white;
+    background: $grey;
+    border: 1px solid $white;
+    border-radius: 0;
+    outline: none;
+
+    &[type=text] {
+      margin: 1rem 0;
+    }
+
+    & + label {
+      font-weight: 400;
+    }
+  }
+
+  input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .zip {
+    position: relative;
+
+    input[type=submit] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .checkbox {
+    position: relative;
+
+    input[type=checkbox] {
+      position: absolute;
+      left: -9999px;
+
+      &:checked + label:before {
+        background: $white image-url('checkmark.png') center center no-repeat;
+        background-size: 0.5em;
+      }
+    }
+
+    label {
+      padding-left: 3rem;
+      cursor: pointer;
+
+      &:before {
+        position: absolute;
+        top: 0.25em;
+        left: 0.5em;
+        display: block;
+        content: "";
+        height: 0.75em;
+        width: 0.75em;
+        border: 1px solid $white;
+      }
+    }
+  }
+}

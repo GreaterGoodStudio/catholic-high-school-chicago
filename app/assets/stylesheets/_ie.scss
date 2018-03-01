@@ -1,0 +1,6 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  main,
+  #map {
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= raw "#{yield(:page_title)} - " if yield(:page_title).present? %><%= t("title") %></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
+
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+
+    <meta name="mapbox-access-token" content="<%= Rails.application.secrets.mapbox_access_token %>">
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body data-controller="<%= controller.controller_path %>">
+    <div class="wrap">
+      <header id="header">
+        <%= link_to root_path, class: "logo" do %>
+          <%= image_tag "logo.png", alt: "Catholic High School Chicago logo" %>
+          <%= t("header.title_html") %>
+        <% end %>
+
+        <a class="icon icon-filters" title="Filter schools" @click.prevent="$store.commit('toggleFilters')">
+          <%= image_tag "filters.svg", alt: "Filter icon" %>
+        </a>
+
+        <a class="icon icon-menu" title="Open menu" @click.prevent="$store.commit('toggleMenu')">
+          <%= image_tag "menu.svg", alt: "Filter icon" %>
+        </a>
+
+        <nav :class="{ active: $store.state.mobileMenu }">
+          <ul>
+            <li><%= link_to t("header.find_matches"), root_path %></li>
+            <li><%= link_to t("header.apply"), page_path(id: "apply") %></li>
+            <li><%= link_to t("header.schools"), schools_path %></li>
+            <li><%= link_to t("header.scholarships"), page_path(id: "scholarships") %></li>
+            <li><%= link_to t("header.alt_locale"), alt_locale_path, class: "locale" %></li>
+            <li>
+              <%= form_tag schools_path, method: "GET" do %>
+                <search-header class="search-header">
+                  <input type="text" name="q" placeholder="Enter school name..." slot="input">
+                  <span slot="icon"><%= render partial: "svgs/search.svg" %></span>
+                </search-header>
+              <% end %>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <%= yield %>
+      </main>
+
+      <footer id="footer">
+        <ul class="unstyled">
+          <li>info@bigshouldersfund.com</li>
+          <li>&copy; 2017 Big Shoulders Fund. <%= t("footer.copyright") %>.</li>
+          <li><%= t("footer.brought_by") %> <a href="http://www.bigshouldersfund.org/" title="Big Shoulders Fund" target="_blank"><%= image_tag "bsf.png", class: "bsf", alt: "Big Shoulders Fund logo" %></a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

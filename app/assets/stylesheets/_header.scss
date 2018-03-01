@@ -1,0 +1,167 @@
+#header {
+  position: relative;
+  padding: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  background: $red;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  z-index: 1;
+
+  @include desktop {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: left;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .logo {
+    position: relative;
+    top: 2px;
+    font-size: 1.6rem;
+    color: $gold;
+
+    @include desktop {
+      top: 0;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    img {
+      position: relative;
+      top: -0.4rem;
+      height: 2.5rem;
+      vertical-align: middle;
+
+      @include desktop {
+        height: 3rem;
+      }
+    }
+
+    span {
+      color: $grey;
+      font-weight: 800;
+    }
+  }
+
+  nav {
+    display: none;
+    margin-top: 1rem;
+
+    @include desktop {
+      display: block;
+      float: right;
+      margin-top: 0;
+    }
+
+    &.active {
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 0.5rem;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      @include desktop {
+        display: inline-block;
+        margin-left: 3rem;
+        padding: 0;
+      }
+    }
+
+    svg {
+      position: relative;
+      top: 0.4rem;
+    }
+
+    a {
+      color: $white;
+
+      &.locale {
+        color: $gold;
+      }
+    }
+  }
+
+  .search-header {
+    position: relative;
+    font-size: 1.4rem;
+    line-height: 2em;
+
+    &.active {
+      padding: 0rem 1rem;
+      background-color: $redDark;
+
+      input {
+        width: 15rem;
+        padding: 0.5rem;
+      }
+
+      svg path {
+        fill: $redDarkest;
+      }
+    }
+
+    svg:hover {
+      cursor: pointer;
+    }
+
+    input {
+      display: inline;
+      width: 0;
+      margin: 0;
+      padding: 0;
+      font-size: inherit;
+      color: white;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      transition: width 0.2s ease-out;
+
+      &::-webkit-input-placeholder { color: $redDarkest; }
+      &::-moz-placeholder          { color: $redDarkest; }
+      &:-ms-input-placeholder      { color: $redDarkest; }
+      &:-moz-placeholder           { color: $redDarkest; }
+    }
+  }
+
+  .icon {
+    position: absolute;
+    cursor: pointer;
+
+    @include desktop {
+      display: none;
+    }
+
+    &.icon-filters {
+      left: 1rem;
+    }
+
+    &.icon-menu {
+      right: 1rem;
+    }
+
+    img {
+      height: 2.5rem;
+      width: auto;
+    }
+  }
+}

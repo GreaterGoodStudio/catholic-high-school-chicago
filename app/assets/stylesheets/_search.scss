@@ -1,0 +1,206 @@
+[data-controller=search] {
+  max-height: 100vh;
+
+  main {
+    padding: 0;
+    max-width: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  aside {
+    display: none;
+    position: relative;
+    width: $aside-width;
+    background: $ivory;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    z-index: 2;
+
+    @include desktop {
+      display: block;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .loading {
+    position: relative;
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: image-url('loading.svg') center center no-repeat rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+  }
+
+  .zip input {
+    font-weight: 500;
+  }
+
+  #map {
+    flex: 1 0 auto;
+  }
+
+  form[name=search],
+  #school-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  form[name=search] {
+    padding: 3rem 3rem 6rem;
+    color: $ivory;
+    background: $grey;
+  }
+
+  #school-list {
+    display: none;
+    padding-top: 6rem;
+    background: $ivory;
+    transform: translateY(100%);
+    transition: transform .2s ease-out;
+
+    li {
+      margin: 3rem;
+      padding: 2rem;
+      color: $grey;
+      background: white;
+    }
+  }
+
+  .btn-toggle {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $grey !important;
+    background-color: $ivory;
+    transition: bottom .2s ease-out;
+
+    @include desktop {
+      position: absolute;
+    }
+
+    > span {
+      position: relative;
+      display: block;
+      margin: 1rem 0;
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: image-url("caret.svg");
+      }
+
+      &:before {
+        left: 0;
+        right: auto;
+      }
+    }
+
+    .summary {
+      strong {
+        color: $red;
+      }
+    }
+
+
+    .change {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .search-filters {
+    display: none;
+  }
+
+  .mapboxgl-popup-content {
+    padding: 1.5rem 2rem;
+    font-family: $font-sans;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    background: rgba(0,0,0,0.8);
+
+    a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .mapboxgl-popup-close-button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $gold;
+    right: 0.5rem;
+    outline: none;
+  }
+
+  .invalid-zipcode {
+    input[name=zipcode] {
+      background: $red;
+    }
+  }
+
+  .full-form {
+    .search-filters,
+    #school-list,
+    .btn-toggle {
+      display: block;
+    }
+  }
+
+  .show-list {
+    #school-list {
+      transform: translateY(0%);
+    }
+
+    .btn-toggle {
+      bottom: 91%;
+      transform: translateY(100%);
+      color: white !important;
+      background-color: $grey;
+
+      @include desktop {
+        bottom: 100%;
+      }
+
+      > span {
+        &:before,
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+
+      .summary {
+        display: none;
+      }
+
+      .change {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+<%= content_for :page_title, @school.name %>
+
+<article class="school">
+  <%= link_to "< #{t("schools.back")}", :back, class: "back" %>
+
+  <section>
+    <school-map :zoom="14" :center="<%= @school.coordinates %>"></school-map>
+
+    <div class="info">
+      <h5><%= @school.name %></h5>
+      <p>
+        <%= simple_format @school.address, {}, wrapper_tag: :span %><br>
+        <%= @school.phone %>
+      </p>
+      <p><%= link_to @school.website, @school.website, target: "_blank" %></p>
+    </div>
+
+    <%= link_to t("schools.get_directions"), directions_url(@school.address), class: "btn directions", target: "_blank" %>
+  </section>
+
+  <section>
+    <%= image_tag "schools/#{@school.slug}.png", alt: "#{@school.name} logo", class: "icon" %>
+    <div class="content">
+      <%= @school.description %>
+
+      <% if @school.application.blank? %>
+      <p class="red note"><strong>NOTE:</strong> This school does not use the December Entrance Exam for applications. Please contact the school directly to learn about their application process.</p>
+      <% end %>
+    </div>
+  </section>
+
+  <section>
+    <div class="icon calendar">
+      <%= image_tag "calendar.png", alt: "" %>
+      <%= link_to t("schools.add_all_to_calendar"), school_calendar_events_url(@school, format: :ics), class: "btn", target: "_blank" %>
+    </div>
+
+    <div class="content">
+      <h4 class="header small"><%= t("schools.dates_to_remember") %></h4>
+
+      <% @calendar_events.group_by(&:name).each do |name, events|  %>
+        <div class="calendar-event-group">
+          <strong><%= name %></strong>
+          <%= render events %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="shadowing">
+      <h4 class="header small"><%= t("schools.shadowing") %></h4>
+      <p><%= t("schools.shadowing_label", name: @school.name) %>, <%= link_to t("click_here"), @school.shadowing_link, target: "_blank" %></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="subsection">
+      <%= image_tag "students_girls.png", alt: "", class: "icon" %>
+
+      <div class="content">
+        <h4 class="header small"><%= t("schools.students") %></h4>
+        <p>
+          <%= @school.population_makeup %><br>
+          <%= @school.population_total %>
+        </p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <%= image_tag "acceptance.png", alt: "", class: "icon" %>
+      <div class="content">
+        <h4 class="header small"><%= t("schools.acceptance") %></h4>
+        <p>
+          <%= @school.population_yearly %><br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="subsection">
+      <%= image_tag "tuition_and_aid.png", alt: "", class: "icon" %>
+      <div class="content">
+        <h4 class="header small"><%= t("schools.tuition_and_aid") %></h4>
+        <p>
+          <strong><%= t("schools.tuition_cost_label") %>:</strong> 
+          <%= @school.tuition_cost %>*
+        </p>
+
+        <p>
+          <strong><%= t("schools.tuition_merit_label") %></strong> 
+          <%= @school.tuition_merit %>
+        </p>
+
+        <p>
+          <strong><%= t("schools.tuition_assistance_label") %></strong> 
+          <%= @school.tuition_assistance %>
+        </p>
+
+        <p>
+          <strong><%= t("schools.tuition_private_label") %>:</strong>
+          <%= @school.tuition_private %>
+        </p>
+
+        <p><%= t("schools.tuition_learn_more") %>, <%= link_to t("click_here"), @school.tuition_link, target: "_blank" %>.</p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <%= image_tag "transportation.png", alt: "", class: "icon" %>
+      <div class="content">
+        <h4 class="header small"><%= t("schools.transportation") %></h4>
+        <p>
+          <strong><%= t("schools.provide_transportation") %></strong><br>
+          <%= @school.transportation_provided %>
+        </p>
+        
+        <p>
+          <strong><%= t("schools.bus_lines") %>:</strong><br>
+          <%= @school.transportation_bus %>
+        </p>
+
+        <p>
+          <strong><%= t("schools.l_lines") %>:</strong><br>
+          <%= @school.transportation_l %>
+        </p>
+
+        <p>
+          <strong><%= t("schools.metra_lines") %>:</strong><br>
+          <%= @school.transportation_metra %>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="subsection">
+      <div class="content">
+        <h4 class="header small"><%= t("schools.academics") %></h4>
+        <p><%= @school.programming_academic %></p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="content">
+        <h4 class="header small"><%= t("schools.extracurriculars") %></h4>
+        <p><%= @school.programming_extracurricular %></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h4 class="header small"><%= t("schools.athletics") %></h4>
+    <p><%= @school.programming_athletic %></p>
+  </section>
+
+  <section>
+    <%= t("schools.corrections") %>
+  </section>
+</article>

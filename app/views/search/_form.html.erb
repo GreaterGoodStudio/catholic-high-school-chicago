@@ -1,0 +1,28 @@
+<form action="<%= search_path %>" name="search" method="POST" slot="form">
+  <div class="form-group">
+    <label><%= t("search.enter_zip") %></label>
+    <div class="zip">
+      <input type="text" name="zipcode" value="606" maxlength="5" v-model.trim="$store.state.zipcode" autofocus><input type="submit" value="<%= t("search.go") %>">
+    </div>
+  </div>
+
+  <p class="form-group">
+    <label><%= t("search.select_criteria") %></label>
+  </p>
+
+  <div class="search-filters">
+    <% t(:search_filters).each do |facet, attrs| %>
+      <div class="form-group">
+        <label><%= attrs[:label] %>:</label>
+        <% attrs[:options].each_with_index do |option, index| %>
+          <div class="checkbox">
+            <input type="checkbox" id="<%= "translations_#{facet}_#{index}" %>" name="<%= "q[translations_#{facet}_cont_any][]" %>" value="<%= option %>" v-model="$store.state.query['<%= "translations_#{facet}_cont_any" %>']">
+            <label for="<%= "translations_#{facet}_#{index}" %>"><%= option %></label>
+          </div>
+        <% end %>
+      </div>
+    <% end %>  
+  </div>
+
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

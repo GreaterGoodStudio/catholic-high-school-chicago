@@ -1,0 +1,15 @@
+.calendar-event-group {
+  margin-bottom: 3rem;
+}
+
+.calendar-link {
+  display: inline-block;
+  margin-left: 1.5rem;
+  font-size: 1.4rem;
+
+  &:before {
+    vertical-align: middle;
+    content: image-url('add.svg');
+    margin-right: 0.5rem;
+  }
+}

@@ -1,0 +1,164 @@
+[data-controller=schools] {
+  main {
+    max-width: 120rem;
+  }
+}
+
+// All schools li
+.schools-all {
+  margin: 0 auto;
+
+  @include desktop {
+    -js-display: flex;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: flex-start;
+  }
+
+  h2 { 
+    width: 100%;
+    padding: 2rem;
+
+    span {
+      color: $red;
+    }
+  }
+
+  .school-summary {
+    padding: 2rem;
+    border: 1.5rem solid white;
+    background: $ivory;
+
+    @include desktop {
+      width: 33.33%;
+    }
+  }
+}
+
+// School details
+.school {
+  h5 {
+    font-size: inherit;
+    font-weight: 600;
+  }
+
+  .back {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $grey;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .address {
+     white-space: pre-wrap;
+  }
+
+  @include desktop {
+    .info {
+      float: left;
+    }
+
+    .directions {
+      float: right;
+    }
+  }
+
+  #map {
+    height: 30rem;
+    margin-bottom: 3rem;
+
+    canvas {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    width: 15rem;
+
+    &.calendar {
+      margin-bottom: 3rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @include desktop {
+      float: left;
+      margin-right: 6rem;
+
+      + .content {
+        overflow: hidden;
+      }
+    }
+  }
+
+  .red.note {
+    color: $red;
+  }
+
+  section {
+    padding: 3rem 0;
+    border-bottom: 2px solid $greyLight;
+    text-align: center;
+
+    @include desktop {
+      text-align: left;
+    }
+
+    strong {
+      font-weight: 500;
+    }
+
+    &:first-of-type {
+      padding-top: 0;
+      border-color: $red;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+      border: none;
+      text-align: center;
+    }
+  }
+
+  .subsection {
+    padding-bottom: 3rem;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      float: left;
+      width: 50%;
+      padding-right: 6rem;
+
+      &:last-of-type {
+        padding-right: 0;
+        padding-left: 6rem;
+      }
+    }
+  }
+
+  section,
+  .subsection {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .shadowing {
+    clear: both;
+    padding-top: 3rem;
+  }
+}

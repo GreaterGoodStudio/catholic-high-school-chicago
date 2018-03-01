@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyString
+  phone: MyString
+  website: MyString
+  Please: MyString
+  explain: MyString
+  your: MyString
+  application: MyString
+  process.: MyString
+  description: MyString
+  population_total: MyString
+  population_yearly: MyString
+  population_makeup: MyString
+  tuition_cost: MyString
+  tuition_merit: MyString
+  tuition_assistance: MyString
+  tuition_private: MyString
+  tuition_info: MyString
+  transportation_public: MyString
+  transportation_bus: MyString
+  transportation_l: MyString
+  transportation_metra: MyString
+  transportation_provided: MyString
+  programming_support: MyString
+  programming_athletic: MyString
+  programming_ap: MyString
+  programming_extracurricular: MyString
+  programming_athletic: MyString
+
+two:
+  name: MyString
+  address: MyString
+  phone: MyString
+  website: MyString
+  Please: MyString
+  explain: MyString
+  your: MyString
+  application: MyString
+  process.: MyString
+  description: MyString
+  population_total: MyString
+  population_yearly: MyString
+  population_makeup: MyString
+  tuition_cost: MyString
+  tuition_merit: MyString
+  tuition_assistance: MyString
+  tuition_private: MyString
+  tuition_info: MyString
+  transportation_public: MyString
+  transportation_bus: MyString
+  transportation_l: MyString
+  transportation_metra: MyString
+  transportation_provided: MyString
+  programming_support: MyString
+  programming_athletic: MyString
+  programming_ap: MyString
+  programming_extracurricular: MyString
+  programming_athletic: MyString

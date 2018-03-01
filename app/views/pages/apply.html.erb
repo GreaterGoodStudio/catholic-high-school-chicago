@@ -1,0 +1,27 @@
+<%= content_for :page_title, t("header.apply") %>
+
+<article class="apply">
+  <section class="important-dates">
+    <h2 class="medium grey header"><%= t("apply.important_dates") %>:</h2>
+    <p><%= t("apply.intro") %></p>
+    <p>(<%= t("apply.note") %>)</p>
+
+    <% CalendarEvent.universal.group_by(&:name).each do |name, events|  %>
+      <div class="calendar-event-group">
+        <header><%= name %></header>
+        <%= render partial: "/calendar_events/calendar_event", collection: events %>
+      </div>
+    <% end %>
+  </section>
+
+  <section class="faqs">
+    <h2 class="medium grey header"><%= t("apply.how_to_apply") %>:</h2>
+
+    <% FAQ.all.each do |faq| %>
+      <div class="faq">
+        <div class="question"><%= faq.question %></div>
+        <div class="answer"><%= faq.answer.html_safe %></div>
+      </div>
+    <% end %>
+  </section>  
+</article>

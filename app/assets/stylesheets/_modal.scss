@@ -1,0 +1,42 @@
+modal {
+  display: none;
+}
+
+.modal {
+  -js-display: flex;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: 500;
+  background: rgba(44,48,60,0.5);
+  z-index: 1000;
+
+  .modal-wrap {
+    width: 60rem;
+    max-width: 100%;
+    background: $ivory;
+    padding: 3rem;
+    margin: 0 auto;
+  }
+
+  .modal-content {
+    padding: 6rem;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 6px #CECCC2;
+  }
+
+  .btn {
+    color: $gold;
+    background: $grey;
+  }
+
+  small {
+    display: block;
+    margin-top: 2rem;
+  }
+}

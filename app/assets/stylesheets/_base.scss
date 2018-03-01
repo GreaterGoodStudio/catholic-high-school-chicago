@@ -1,0 +1,73 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-sans;
+  font-size: 1.6rem;
+  line-height: 1.25em;
+  color: $grey;
+  background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  .wrap {
+    -js-display: flex;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  margin: 2rem 0;
+}
+
+a {
+  font-weight: 500;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+ul {
+  &.unstyled {
+    list-style: none;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+main {
+  -js-display: flex;
+  display: flex;
+  flex: 1 0 auto;
+  padding: 3rem 3rem 6rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $content-width;
+
+  @include desktop {
+    
+  }
+
+  a {
+    color: $red;
+  }
+}

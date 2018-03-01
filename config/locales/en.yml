@@ -1,0 +1,172 @@
+en:
+  title: Catholic High School Chicago
+  header:
+    title_html: <span>Catholic High School</span> Chicago
+    find_matches: Find Matches
+    apply: Apply
+    schools: Schools
+    scholarships: Scholarships
+    alt_locale: Español
+    search: Search
+  footer:
+    copyright: All rights reserved
+    brought_by: Brought to you by
+  click_here: click here
+  apply:
+    intro: As with any important decision to make, there are things you will want to remember when applying to Catholic high school. Here is a list of important dates to note and use as you are making your plans to attend high school.
+    note: Please note that dates are updated for each school year.
+    important_dates: Important dates to remember this year
+    how_to_apply: How to apply to Catholic Schools in Chicago
+  greeting:
+    header: Hello!
+    body: You’re gearing up to start high school and you want to find the right one for you. By pulling together some factors most important to you and your family, we’ll give you the power to discover which school matches your needs most.
+    close: Get Started
+  scholarships:
+    title: High School Scholarship Support
+  schools:
+    more_info: More info
+    back: Back to Search
+    get_directions: Get Directions
+    add_to_calendar: Add to Calendar
+    add_all_to_calendar: Add All to Calendar
+    dates_to_remember: Dates to Remember
+    shadowing: Shadowing
+    shadowing_label: To learn more about shadowing at %{name}, and to schedule your Shadow Day
+    students: Students
+    acceptance: Acceptance
+    tuition_and_aid: Tuition and Aid
+    transportation: Transportation
+    academics: Academics
+    extracurriculars: Extracurriculars
+    athletics: Athletics
+    corrections: Notice something incorrect? If you would like to request a change, click here.
+    bus_lines: Bus Lines
+    l_lines: ‘L’ Lines
+    metra_lines: Metra Lines
+    provide_transportation: Does this school provide its own transportation?
+    tuition_cost_label: "Tuition for 2017-2018 school year is"
+    tuition_merit_label: Does this school offer merit based scholarships?
+    tuition_assistance_label: Does this school offer financial aid or tuition assistance based on financial aid?
+    tuition_private_label: The following private scholarship opportunities are compatible with this school
+    tuition_learn_more: To learn more about scholarships and financial aid at Fenwick High School
+  search:
+    enter_zip: To begin, enter your ZIP code
+    go: Go
+    select_criteria: Select all criteria below that is important to you. You may leave sections blank.
+    change_criteria: Change my search criteria
+    schools_match_criteria: schools match your criteria
+  search_filters:
+    population_total:
+      label: School size
+      options:
+        - Over 500 students
+        - Between 250 and 500 students
+        - Less than 250 students
+    population_makeup:
+      label: Student population
+      options:
+        - Co-ed
+        - All girls
+        - All boys
+    transportation_options:
+      label: Transportation options
+      options:
+        - Public Transit (CTA, PACE, or Metra)
+        - School bus
+    programming_support:
+      label: Support programming
+      options:
+        - English as a Second Language (ESL)
+        - Post-High School Counseling
+        - Support for Learning Differences
+        - Tutoring
+        - Mental Health Counseling
+        - Restorative Justice Programs
+        - Corporate Work Study Program
+    programming_academic:
+      label: Academic programming
+      options:
+        - IB Program
+        - AP Art History
+        - AP Biology
+        - AP Calculus
+        - AP Chemistry
+        - AP Chinese
+        - AP Computer Science
+        - AP Economics
+        - AP English
+        - AP Environmental Studies
+        - AP European History
+        - AP French
+        - AP German
+        - AP Government and Politics
+        - AP Human Geography
+        - AP Italian
+        - AP Japanese
+        - AP Latin
+        - AP Music Theory
+        - AP Physics
+        - AP Psychology
+        - AP Spanish
+        - AP Statistics
+        - AP Studio Art
+        - AP United States History
+        - AP World History
+        - Vocational Training
+        - Online Classes
+        - Summer School
+        - Credit Recovery
+        - Dual Enrollment or Credit
+        - Study Abroad
+        - Service Learning
+    programming_extracurricular:
+      label: Extracurricular programming
+      options:
+        - Drama
+        - Choir/Chorus
+        - National Honor Society
+        - STEM Clubs
+        - Coding
+        - Robotics
+        - Art
+        - Band/Orchestra
+        - Foreign Language
+        - Student Government
+        - Business/Entrepreneurship
+    programming_athletic:
+      label: Athletic programming
+      options:
+        - Badminton
+        - Baseball
+        - Basketball
+        - Bowling
+        - Cheerleading
+        - Diving
+        - Fencing
+        - Fishing
+        - Flag Football
+        - Football
+        - Golf
+        - Gymnastics
+        - Lacrosse
+        - Rowing/Crew
+        - Rugby
+        - Sailing
+        - Soccer
+        - Softball
+        - Swimming
+        - Tennis
+        - Track and Field
+        - Volleyball
+        - Water Polo
+        - Wrestling
+  activerecord:
+    models:
+      faq:
+        one: Application FAQ
+        other: Application FAQs
+  date_range:
+    same_day: "%{dow}, %{month} %{from_day}, %{year} at %{from_time}%{sep}%{until_time}"
+    same_month: "%{month} %{from_day}%{sep}%{until_day}, %{year}"
+    different_months_same_year: "%{from_month} %{from_day}%{sep}%{until_month} %{until_day}, %{year}"
+    different_years: "%{from_month} %{from_day}, %{from_year}%{sep}%{until_month} %{until_day}, %{until_year}"
