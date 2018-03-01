@@ -44,6 +44,14 @@ a {
   }
 }
 
+ol {
+  margin: 2rem 0 2rem 4rem;
+
+  li {
+    margin-bottom: 2rem;
+  }
+}
+
 ul {
   &.unstyled {
     list-style: none;

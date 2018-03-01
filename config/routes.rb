@@ -7,6 +7,8 @@ Rails.application.routes.draw do
       resources :calendar_events, path: :calendar, only: [:index, :show]
     end
 
+    resources :calendar_events, only: [:show]
+
     # Search results
     post "/search", to: "search#index"
     get "/search/:token", to: "search#index", constraints: { token: /.*/ }, as: :bookmark

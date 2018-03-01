@@ -3,7 +3,7 @@
 <article class="scholarships">
   <h1 class="medium grey header"><%= t("scholarships.title") %></h1>
 
-  <% Scholarship.all.each do |scholarship| %>
+  <% Scholarship.all.order(:name).each do |scholarship| %>
       <div class="scholarship">
         <%= link_to scholarship.name, scholarship.website, class: "name", target: "_blank" %>
         <div class="description"><%= scholarship.description.html_safe %></div>

@@ -8,7 +8,7 @@
 
     <% CalendarEvent.universal.group_by(&:name).each do |name, events|  %>
       <div class="calendar-event-group">
-        <header><%= name %></header>
+        <strong><%= name %></strong>
         <%= render partial: "/calendar_events/calendar_event", collection: events %>
       </div>
     <% end %>

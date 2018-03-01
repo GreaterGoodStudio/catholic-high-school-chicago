@@ -10,7 +10,7 @@ class CalendarEventsController < ApplicationController
 
   def show
     event = CalendarEvent.find(params[:id])
-    filename = "#{@school.slug}_#{params[:id]}.ics"
+    filename = @school ? "#{@school.slug}_#{params[:id]}.ics" : "chsc_#{params[:id]}.ics"
 
     render_ics event, filename
   end
@@ -18,7 +18,7 @@ class CalendarEventsController < ApplicationController
   private
 
     def find_school
-      @school = School.friendly.find(params[:school_id])
+      @school = School.friendly.find(params[:school_id]) if params[:school]
     end
 
     def render_ics(events, filename)

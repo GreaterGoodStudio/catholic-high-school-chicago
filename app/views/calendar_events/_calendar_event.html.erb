@@ -1,4 +1,8 @@
 <div class="calendar-event">
   <span><%= date_range calendar_event.starts_at, calendar_event.ends_at %></span>
-  <%= link_to t("schools.add_to_calendar"), school_calendar_event_url(@school, calendar_event, format: :ics), class: "calendar-link", target: "_blank" if @school %>
+  <% if @school %>
+    <%= link_to t("schools.add_to_calendar"), school_calendar_event_url(@school, calendar_event, format: :ics), class: "calendar-link", target: "_blank" if @school %>
+  <% else %>
+    <%= link_to t("schools.add_to_calendar"), calendar_event_url(calendar_event, format: :ics), class: "calendar-link", target: "_blank" %>
+  <% end %>
 </div>
