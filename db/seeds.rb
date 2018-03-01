@@ -182,14 +182,14 @@ end
   {
     name: "Chicago Lights",
     description: "Students must be in the Chicago Lights tutoring program in order to apply for these high school scholarships.",
-    website: "https://www.chicagolights.org"
+    website: "https://www.chicagolights.org/our-programs/tutoring/"
   },
 
   {
     name: "Daniel Murphy Scholarship Fund",
     description: "Daniel Murphy Scholarship Fund (DMSF) gives high school scholarship assistance and educational support to Chicago students from economically disadvantaged backgrounds. DMSF seeks to make a life-altering difference in the lives of its scholars by providing them with the best opportunity to succeed in high school and college.<br><br>
                   Application is normally due in mid-October.",
-    website: "http://www.dmsf.org/"
+    website: "http://www.dmsf.org/about-dmsf/"
   },
 
   {
@@ -210,7 +210,7 @@ end
     name: "LINK Unlimited",
     description: "LINK Unlimited connects economically disadvantaged African American high school students with mentors, resources, and foundational skills required for success as they advance into, through, and beyond college. Candidates must be academically motivated and exhibit a drive to succeed. From there, LINK can help them go anywhere.<br><br>
                   Application is normally due in mid-November.",
-    website: "http://linkunlimited.org/web/"
+    website: "http://linkunlimited.org/web/about-us/"
   }
 ].each do |attrs|
   scholarship = Scholarship.where(name: attrs[:name]).first_or_initialize
