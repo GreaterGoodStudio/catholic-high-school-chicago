@@ -227,8 +227,8 @@ end
 
   {
     name: "Test Date",
-    starts_at: Time.zone.local(2018,12,12),
-    ends_at:  Time.zone.local(2018,12,12)
+    starts_at: Time.zone.local(2018,12,12,9),
+    ends_at:  Time.zone.local(2018,12,12,17)
   },
 ].each do |attrs|
   event = CalendarEvent.where(name: attrs[:name]).first_or_initialize

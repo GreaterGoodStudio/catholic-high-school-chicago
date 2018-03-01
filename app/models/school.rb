@@ -16,6 +16,8 @@ class School < ApplicationRecord
                           :programming_academic, :programming_ap, :programming_extracurricular,
                           :programming_athletic
 
+  default_scope { order(:name) }
+
   def to_s
     name
   end
