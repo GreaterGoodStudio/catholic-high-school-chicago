@@ -60,7 +60,8 @@ CSV.foreach(seeds_csv, headers: true) do |row|
     es_options = I18n.t("search_filters.#{key}.options")
 
     translated = en_values.map do |val|
-      es_options[en_options.index(val.strip)] rescue val
+      val = val.strip
+      es_options[en_options.index(val)] rescue val
     end
 
     school[key] = translated.join(', ')

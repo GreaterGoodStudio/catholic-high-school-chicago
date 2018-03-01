@@ -31,7 +31,7 @@
 
   <section>
     <div class="icon calendar">
-      <%= image_tag "calendar.png", alt: "" %>
+      <%= image_tag "calendar.png", alt: "Calendar icon" %>
       <%= link_to t("schools.add_all_to_calendar"), school_calendar_events_url(@school, format: :ics), class: "btn", target: "_blank" %>
     </div>
 
@@ -54,7 +54,9 @@
 
   <section>
     <div class="subsection">
-      <%= image_tag "students_girls.png", alt: "", class: "icon" %>
+      <% Globalize.with_locale(:en) do %>
+        <%= image_tag "students_#{@school.population_makeup.parameterize}.png", alt: "Population icon", class: "icon" %>
+      <% end %>
 
       <div class="content">
         <h4 class="header small"><%= t("schools.students") %></h4>
@@ -66,7 +68,7 @@
     </div>
 
     <div class="subsection">
-      <%= image_tag "acceptance.png", alt: "", class: "icon" %>
+      <%= image_tag "acceptance.png", alt: "Acceptance icon", class: "icon" %>
       <div class="content">
         <h4 class="header small"><%= t("schools.acceptance") %></h4>
         <p>
@@ -78,7 +80,7 @@
 
   <section>
     <div class="subsection">
-      <%= image_tag "tuition_and_aid.png", alt: "", class: "icon" %>
+      <%= image_tag "tuition_and_aid.png", alt: "Tuition and Aid icon", class: "icon" %>
       <div class="content">
         <h4 class="header small"><%= t("schools.tuition_and_aid") %></h4>
         <p>
@@ -106,7 +108,7 @@
     </div>
 
     <div class="subsection">
-      <%= image_tag "transportation.png", alt: "", class: "icon" %>
+      <%= image_tag "transportation.png", alt: "Transportation icon", class: "icon" %>
       <div class="content">
         <h4 class="header small"><%= t("schools.transportation") %></h4>
         <p>
