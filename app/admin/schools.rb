@@ -54,7 +54,7 @@ ActiveAdmin.register School do
       f.input :tuition_link
       f.input :shadowing_link
       f.input :tuition_cost
-      f.input :transportation_bus
+      f.input :transportation_bus, as: :text, input_html: { rows: 3 }
       f.input :transportation_l
       f.input :transportation_metra
     end

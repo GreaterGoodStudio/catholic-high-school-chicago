@@ -23,12 +23,11 @@
 
   .logo {
     position: relative;
-    top: 2px;
     font-size: 1.6rem;
+    line-height: 1.5em;
     color: $gold;
 
     @include desktop {
-      top: 0;
       font-size: 2rem;
     }
 

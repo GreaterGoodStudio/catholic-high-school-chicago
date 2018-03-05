@@ -39,10 +39,12 @@
       <h4 class="header small"><%= t("schools.dates_to_remember") %></h4>
 
       <% @calendar_events.group_by(&:name).each do |name, events|  %>
+        <% unless name == "Test Date" && @school.application.blank? %>
         <div class="calendar-event-group">
           <strong><%= name %></strong>
           <%= render events %>
         </div>
+        <% end %>
       <% end %>
     </div>
 
@@ -104,6 +106,8 @@
         </p>
 
         <p><%= t("schools.tuition_learn_more", name: @school.name) %>, <%= link_to t("click_here"), @school.tuition_link, target: "_blank" %>.</p>
+
+        <p><small class="footnote">*Base tuition price does not include additional costs, such as activity fees.</small></p>
       </div>
     </div>
 

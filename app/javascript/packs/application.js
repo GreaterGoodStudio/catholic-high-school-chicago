@@ -27,7 +27,8 @@ const store = new Vuex.Store({
     schools: [],
     loading: false,
     mobileMenu: false,
-    mobileFilters: false
+    mobileFilters: false,
+    lastSearch: undefined
   },
 
   mutations: {
