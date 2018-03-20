@@ -46,7 +46,7 @@
 
     methods: {
       init() {
-        let zipcode = this.zipcode || "606"
+        let zipcode = this.zipcode || ""
 
         this.$store.commit('initStore', { query: this.query, zipcode: zipcode })
         this.showFullForm = this.zipcode
@@ -58,7 +58,7 @@
           q: this.$store.state.query
         }
 
-        this.validZIPCode = /606\d{2}/.test(params.zipcode)
+        this.validZIPCode = /\d{5}/.test(params.zipcode)
         this.showFullForm = this.validZIPCode
 
         if (!this.validZIPCode) return

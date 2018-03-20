@@ -64,11 +64,12 @@
           container: this.$el,
           interactive: this.interactive,
           maxBounds: new mapboxgl.LngLatBounds(
-            new mapboxgl.LngLat(-87.940267, 41.644335),
-            new mapboxgl.LngLat(-87.523661, 42.023131)
+            new mapboxgl.LngLat(-88.993548, 40.504335),
+            new mapboxgl.LngLat(-86.505286, 43.400389)
           ),
           style: "mapbox://styles/mapbox/streets-v10",
-          zoom: this.zoom
+          zoom: this.zoom,
+          minZoom: 9
         })
 
         // Mark the center, if it was passed in as prop

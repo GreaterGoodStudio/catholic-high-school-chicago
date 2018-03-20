@@ -39,6 +39,6 @@ class SearchController < ApplicationController
     end
 
     def default_query
-      I18n.t(:search_filters).keys.inject({}) {|h, k| h.merge!("translations_#{k}_cont_any" => [])}
+      I18n.t(:search_filters).keys.inject({}) {|h, k| h.merge!("translations_#{k}_cont_all" => [])}
     end
 end

@@ -16,7 +16,7 @@
         <label><%= attrs[:label] %>:</label>
         <% attrs[:options].each_with_index do |option, index| %>
           <div class="checkbox">
-            <input type="checkbox" id="<%= "translations_#{facet}_#{index}" %>" name="<%= "q[translations_#{facet}_cont_any][]" %>" value="<%= option %>" v-model="$store.state.query['<%= "translations_#{facet}_cont_any" %>']">
+            <input type="checkbox" id="<%= "translations_#{facet}_#{index}" %>" name="<%= "q[translations_#{facet}_cont_all][]" %>" value="<%= option %>" v-model="$store.state.query['<%= "translations_#{facet}_cont_all" %>']">
             <label for="<%= "translations_#{facet}_#{index}" %>"><%= option %></label>
           </div>
         <% end %>
