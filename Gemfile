@@ -13,7 +13,7 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.2"
 gem "turbolinks", "~> 5"
-gem "webpacker", "~> 3.0"
+gem "webpacker", "~> 3.4"
 
 gem "activeadmin", "~> 1.1"
 gem "activeadmin-globalize", "~> 1.0.0.pre"
