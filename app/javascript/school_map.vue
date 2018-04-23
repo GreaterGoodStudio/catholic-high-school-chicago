@@ -67,7 +67,7 @@
             new mapboxgl.LngLat(-88.993548, 40.504335),
             new mapboxgl.LngLat(-86.505286, 43.400389)
           ),
-          style: "mapbox://styles/mapbox/streets-v10",
+          style: "mapbox://styles/srobbin/cjgcei5ze5dmo2rjt66f1huj9",
           zoom: this.zoom,
           minZoom: 9
         })
