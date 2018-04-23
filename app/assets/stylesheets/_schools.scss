@@ -26,12 +26,15 @@
   }
 
   .school-summary {
+    margin: 2rem 1.5rem;
     padding: 2rem;
-    border: 1.5rem solid white;
-    background: $ivory;
+    background: $greyLightest;
+    box-shadow: 0 0 5px #B1AFA3;
 
     @include desktop {
-      width: 33.33%;
+      margin: 1.5rem;
+      flex: 0 0 30%;
+      flex-grow: 1;
     }
   }
 }

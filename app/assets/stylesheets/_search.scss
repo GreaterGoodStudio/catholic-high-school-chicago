@@ -14,7 +14,7 @@
     display: none;
     position: relative;
     width: $aside-width;
-    background: $ivory;
+    background: $greyLightest;
     overflow: hidden;
     box-shadow: 2px 0 5px rgba(0,0,0,0.5);
     z-index: 2;
@@ -63,14 +63,14 @@
 
   form[name=search] {
     padding: 3rem 3rem 6rem;
-    color: $ivory;
+    color: $greyLightest;
     background: $grey;
   }
 
   #school-list {
     display: none;
     padding-top: 6rem;
-    background: $ivory;
+    background: $greyLightest;
     transform: translateY(100%);
     transition: transform .2s ease-out;
 
@@ -79,6 +79,7 @@
       padding: 2rem;
       color: $grey;
       background: white;
+      box-shadow: 0 0 5px #B1AFA3;
     }
   }
 
@@ -89,7 +90,7 @@
     bottom: 0;
     width: 100%;
     color: $grey !important;
-    background-color: $ivory;
+    background-color: $greyLightest;
     transition: bottom .2s ease-out;
 
     @include desktop {
@@ -153,7 +154,7 @@
   .mapboxgl-popup-close-button {
     font-size: 1.6rem;
     font-weight: bold;
-    color: $gold;
+    color: $red;
     right: 0.5rem;
     outline: none;
   }

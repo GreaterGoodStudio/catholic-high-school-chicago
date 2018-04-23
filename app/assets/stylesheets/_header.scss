@@ -25,7 +25,7 @@
     position: relative;
     font-size: 1.6rem;
     line-height: 1.5em;
-    color: $gold;
+    color: $grey;
 
     @include desktop {
       font-size: 2rem;
@@ -47,7 +47,7 @@
     }
 
     span {
-      color: $grey;
+      color: $white;
       font-weight: 800;
     }
   }
@@ -95,7 +95,7 @@
       color: $white;
 
       &.locale {
-        color: $gold;
+        color: $grey;
       }
     }
   }
