@@ -1,6 +1,8 @@
 <%= content_for :page_title, t("header.scholarships") %>
 
 <article class="scholarships">
+  <%= render "intro" %>
+  
   <h1 class="medium grey header"><%= t("scholarships.title") %></h1>
 
   <% Scholarship.all.order(:name).each do |scholarship| %>

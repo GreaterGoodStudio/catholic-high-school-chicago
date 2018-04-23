@@ -1,0 +1,16 @@
+<section class="home">
+  <div class="hero">
+    <%= image_tag @intro.image.url %>
+  </div>
+
+  <div class="intro">
+    <%= @intro.copy.html_safe %>
+
+    <%= form_tag search_path, name: "search", method: :post do %>
+      <div class="form-group">
+        <%= label_tag :zipcode, "Your ZIP Code", class: "hidden" %>
+        <%= text_field_tag :zipcode, nil, placeholder: "ZIP Code..." %>
+      </div>
+    <% end %>
+  </div>
+</section>

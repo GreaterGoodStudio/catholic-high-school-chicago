@@ -1,0 +1,2 @@
+class IntroPolicy < ApplicationPolicy
+end

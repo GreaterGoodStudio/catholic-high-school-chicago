@@ -18,23 +18,39 @@
 
   h2 { 
     width: 100%;
-    padding: 2rem;
+    margin: 2rem 1.5rem;
 
     span {
       color: $red;
     }
   }
 
+  .intro {
+    margin-bottom: 3rem;
+
+    @include desktop {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   .school-summary {
-    margin: 2rem 1.5rem;
     padding: 2rem;
+    margin-bottom: 3rem;
     background: $greyLightest;
     box-shadow: 0 0 5px #B1AFA3;
 
     @include desktop {
+      width: 29rem;
       margin: 1.5rem;
-      flex: 0 0 30%;
-      flex-grow: 1;
+
+      &:first-of-type,
+      &:nth-of-type(3n+4) {
+        margin-left: 0;
+      }
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
     }
   }
 }

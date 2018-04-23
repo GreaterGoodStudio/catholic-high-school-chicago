@@ -1,0 +1,7 @@
+<modal onclose="setCookie">
+  <h2 class="header"><%= t("greeting.header") %></h2>
+  <p><%= t("greeting.body") %></p>
+  <a href="#" class="btn" data-close="true"><%= t("greeting.close") %></a>
+
+  <small><%= link_to t("header.alt_locale"), alt_locale_path, class: "locale" %></small>
+</modal>

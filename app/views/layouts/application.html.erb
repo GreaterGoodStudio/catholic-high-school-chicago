@@ -35,7 +35,7 @@
 
         <nav :class="{ active: $store.state.mobileMenu }">
           <ul>
-            <li><%= link_to t("header.find_matches"), root_path %></li>
+            <li><%= link_to t("header.find_matches"), search_path %></li>
             <li><%= link_to t("header.apply"), page_path(id: "apply") %></li>
             <li><%= link_to t("header.schools"), schools_path %></li>
             <li><%= link_to t("header.scholarships"), page_path(id: "scholarships") %></li>

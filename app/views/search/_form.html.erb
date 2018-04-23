@@ -2,11 +2,11 @@
   <div class="form-group">
     <label><%= t("search.enter_zip") %></label>
     <div class="zip">
-      <input type="text" name="zipcode" value="606" maxlength="5" v-model.trim="$store.state.zipcode" autofocus><input type="submit" value="<%= t("search.go") %>">
+      <input type="text" name="zipcode" maxlength="5" v-model.trim="$store.state.zipcode" autofocus><input type="submit" value="<%= t("search.go") %>">
     </div>
   </div>
 
-  <p class="form-group">
+  <p class="search-criteria">
     <label><%= t("search.select_criteria") %></label>
   </p>
 

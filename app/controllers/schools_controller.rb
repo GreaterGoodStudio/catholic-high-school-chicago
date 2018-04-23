@@ -1,6 +1,7 @@
 class SchoolsController < ApplicationController
   def index
     @query = school_params[:q]
+    @intro = Intro.find_by(page: "schools")
     @schools = (@query ? School.where("name ILIKE ?", "%#{@query}%") : School.all).order(:name)
   end
 

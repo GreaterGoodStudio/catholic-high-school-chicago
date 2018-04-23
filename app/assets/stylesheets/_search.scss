@@ -132,6 +132,7 @@
     }
   }
 
+  .search-criteria,
   .search-filters {
     display: none;
   }
@@ -166,6 +167,7 @@
   }
 
   .full-form {
+    .search-criteria,
     .search-filters,
     #school-list,
     .btn-toggle {

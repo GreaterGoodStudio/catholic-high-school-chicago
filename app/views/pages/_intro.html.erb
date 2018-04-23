@@ -1,0 +1,8 @@
+<% if @intro.present? %>
+<section class="intro">
+  <%= image_tag @intro.image.url if @intro.image.present? %>
+  <div class="copy">
+    <%= @intro.copy.html_safe %>
+  </div>
+</section>
+<% end %>
