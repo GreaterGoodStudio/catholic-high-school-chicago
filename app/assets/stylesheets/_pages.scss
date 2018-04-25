@@ -13,11 +13,6 @@
 .home {
   text-align: center;
 
-  @include desktop {
-    font-size: 1.8rem;
-    line-height: 1.3em;
-  }
-
   h1 {
     text-transform: uppercase;
     color: $red;
@@ -25,7 +20,7 @@
     line-height: 1.1em;
 
     @include desktop {
-      font-size: 3.6rem;
+      font-size: 3.2rem;
     }
   }
 
@@ -37,13 +32,24 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 2rem;
+
+    &.mask {
+      display: none;
+      position: absolute;
+      margin-bottom: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
   }
 
   .intro {
     margin-bottom: 0;
 
     @include desktop {
-      padding: 45rem 10rem 0;
+      padding: 42rem 10rem 0;
+      font-size: 1.6rem;
+      line-height: 1.3em;
     }
   }
 
@@ -53,7 +59,7 @@
 
     input {
       padding: 1rem 1.5rem;
-      background-color: #9b9b9b;
+      background: image-url('input_caret.svg') right 1.5rem center no-repeat #9b9b9b;
 
       &::-webkit-input-placeholder { color: $greyLightest; }
       &::-moz-placeholder { color: $greyLightest;; }
@@ -74,6 +80,10 @@
 
       img {
         width: 100%;
+      }
+
+      .mask {
+        display: block;
       }
     }
   }
