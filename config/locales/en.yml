@@ -39,7 +39,7 @@ en:
     academics: Academics
     extracurriculars: Extracurriculars
     athletics: Athletics
-    corrections: Notice something incorrect? If you would like to request a change
+    corrections: Notice something incorrect? If you would like to request a change, email us at
     bus_lines: Bus Lines
     l_lines: ‘L’ Lines
     metra_lines: Metra Lines
@@ -49,6 +49,8 @@ en:
     tuition_assistance_label: Does this school offer financial aid or tuition assistance based on financial aid?
     tuition_private_label: The following private scholarship opportunities are compatible with this school
     tuition_learn_more: To learn more about scholarships and financial aid at %{name}
+    tuition_note: Base tuition price does not include additional costs, such as activity fees, and is subject to change each year
+    extrance_exam_note_html: <strong>NOTE:</strong> This school does not use the December Entrance Exam for applications. Please contact the school directly to learn about their application process.
   search:
     enter_zip: To begin, enter your ZIP code
     go: Go

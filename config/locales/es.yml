@@ -39,7 +39,7 @@ es:
     academics: Académica
     extracurriculars: Extracurriculares
     athletics: Deportes
-    corrections: ¿Notaste algo incorrecto? Si desea solicitar un cambio
+    corrections: ¿Notaste algo incorrecto? Si desea solicitar un cambio, envíenos un correo electrónico a
     bus_lines: Líneas de bus
     l_lines: Lineas ‘L’
     metra_lines: Lineas de la Metra
@@ -49,6 +49,8 @@ es:
     tuition_assistance_label: ¿Ofrece esta escuela ayuda financiera o asistencia financiera basada en la ayuda financiera?
     tuition_private_label: Las siguientes oportunidades de becas privadas son compatibles con esta escuela
     tuition_learn_more: Para obtener más información sobre becas y ayuda financiera en %{name}
+    tuition_note: El precio base de la colegiatura no incluye los costos adicionales, como las tarifas de actividad, y está sujeto a cambios cada año
+    extrance_exam_note_html: <strong>NOTA:</strong> Esta escuela no utiliza el examen de ingreso de diciembre para las solicitudes. Por favor, póngase en contacto con la escuela directamente para conocer su proceso de solicitud.
   search:
     enter_zip: Para comenzar, ingrese su código postal
     go: Ir

@@ -24,7 +24,7 @@
       <%= @school.description %>
 
       <% if @school.application.blank? %>
-      <p class="red note"><strong>NOTE:</strong> This school does not use the December Entrance Exam for applications. Please contact the school directly to learn about their application process.</p>
+      <p class="red note"><%= t("schools.extrance_exam_note_html") %></p>
       <% end %>
     </div>
   </section>
@@ -107,7 +107,7 @@
 
         <p><%= t("schools.tuition_learn_more", name: @school.name) %>, <%= link_to t("click_here"), @school.tuition_link, target: "_blank" %>.</p>
 
-        <p><small class="footnote">*Base tuition price does not include additional costs, such as activity fees.</small></p>
+        <p><small class="footnote">*<%= t("schools.tuition_note") %>.</small></p>
       </div>
     </div>
 
@@ -160,6 +160,6 @@
   </section>
 
   <section>
-    <%= t("schools.corrections") %>, <%= link_to t("click_here"), "mailto:HSinfo@bigshouldersfund.org?subject=Inquiry from CatholicHighSchoolChicago.org" %>.
+    <%= t("schools.corrections") %> <%= link_to "HSinfo@bigshouldersfund.org", "mailto:HSinfo@bigshouldersfund.org?subject=Inquiry from CatholicHighSchoolChicago.org" %>.
   </section>
 </article>
