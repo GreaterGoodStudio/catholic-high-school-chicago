@@ -26,3 +26,6 @@ $ ->
   })
 
   $endsAt.flatpickr(options)
+
+  # Hack to make sure they don't disappear during form submit
+  $('.available-locales a').removeClass('hidden')
