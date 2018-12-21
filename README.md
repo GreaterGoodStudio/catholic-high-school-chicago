@@ -16,7 +16,7 @@ Brought to you by the [Big Shoulders Fund](http://www.bigshouldersfund.org/).
 
 ## Development
 
-Create a feature branch off of the `develop` branch: `git checkout -b feature-name`. Create a pull request to be merged back into `develop`.
+Create a feature branch off of the `master` branch: `git checkout -b feature-name`. Create a pull request to be merged back into `master`.
 
 ## Deploying
 
@@ -25,7 +25,3 @@ To deploy to Heroku:
 ```
 git push heroku master
 ```
-
-## Branches
-
-The `master` branch is reserved for production-ready code only. All development and pull requests should take place off of the `develop` branch.
