@@ -519,5 +519,8 @@ DEPENDENCIES
   webpacker (~> 3.4)
   yaml2csv (~> 0.0.3)
 
+RUBY VERSION
+   ruby 2.6.3p62
+
 BUNDLED WITH
    1.17.2
