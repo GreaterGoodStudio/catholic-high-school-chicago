@@ -37,6 +37,8 @@ gem "ransack", "~> 1.8"
 gem "trix", "~> 0.11"
 gem "yaml2csv", "~> 0.0.3", require: false
 
+gem "rubyzip", ">= 1.3.0"
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"
