@@ -22,7 +22,7 @@
     <% FAQ.all.each do |faq| %>
       <div class="faq">
         <div class="question"><%= faq.question %></div>
-        <div class="answer"><%= faq.answer.html_safe %></div>
+        <div class="answer"><%= faq.answer.try(:html_safe) %></div>
       </div>
     <% end %>
   </section>  
