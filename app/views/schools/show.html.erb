@@ -13,6 +13,12 @@
         <%= @school.phone %>
       </p>
       <p><%= link_to @school.website, @school.website, target: "_blank" %></p>
+
+      <%= content_tag :p, class: "social" do %>
+        <%= link_to "Facebook", @school.facebook_link, class: "facebook", target: "_blank" if @school.facebook_link.present? %>
+        <%= link_to "Instagram", @school.instagram_link, class: "instagram", target: "_blank" if @school.instagram_link.present? %>
+        <%= link_to "Twitter", @school.twitter_link, class: "twitter", target: "_blank" if @school.twitter_link.present? %>
+      <% end if @school.attributes.slice("facebook_link", "instagram_link", "twitter_link").values.any?(&:present?) %>
     </div>
 
     <%= link_to t("schools.get_directions"), directions_url(@school.address), class: "btn directions", target: "_blank" %>

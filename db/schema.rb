@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20210114154103) do
+ActiveRecord::Schema.define(version: 20210114154958) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -180,6 +180,9 @@ ActiveRecord::Schema.define(version: 20210114154103) do
     t.string "shadowing_link"
     t.string "transportation_options"
     t.text "display_address"
+    t.string "facebook_link"
+    t.string "instagram_link"
+    t.string "twitter_link"
   end
 
   create_table "users", force: :cascade do |t|

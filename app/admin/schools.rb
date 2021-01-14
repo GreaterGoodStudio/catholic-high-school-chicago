@@ -4,6 +4,7 @@ ActiveAdmin.register School do
   menu priority: 1
 
   permit_params :id, :name, :address, :display_address, :phone, :website,
+    :facebook_link, :instagram_link, :twitter_link,
     :tuition_cost, :tuition_link, :shadowing_link,
     :transportation_bus, :transportation_l, :transportation_metra, :transportation_options,
     translations_attributes: [
@@ -52,6 +53,9 @@ ActiveAdmin.register School do
       f.input :display_address, input_html: { rows: 3 }, label: "Display address (optional)", hint: "Use this field if you need to add text to the address that might break the map. e.g., (Entrance, Parking)"
       f.input :phone
       f.input :website
+      f.input :facebook_link
+      f.input :instagram_link
+      f.input :twitter_link
       f.input :tuition_link
       f.input :shadowing_link
       f.input :tuition_cost
