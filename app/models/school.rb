@@ -14,7 +14,8 @@ class School < ApplicationRecord
                           :tuition_merit, :tuition_assistance, :tuition_private, :transportation_options,
                           :transportation_public, :transportation_provided, :programming_support, 
                           :programming_academic, :programming_ap, :programming_extracurricular,
-                          :programming_athletic
+                          :programming_athletic,
+                          fallbacks_for_empty_translations: true
 
   default_scope { order(:name) }
 
