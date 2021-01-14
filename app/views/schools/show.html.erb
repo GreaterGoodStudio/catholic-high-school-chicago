@@ -8,8 +8,8 @@
 
     <div class="info">
       <h5><%= @school.name %></h5>
+      <%= simple_format (@school.display_address.present? ? @school.display_address : @school.address) %>
       <p>
-        <%= simple_format @school.address, {}, wrapper_tag: :span %><br>
         <%= @school.phone %>
       </p>
       <p><%= link_to @school.website, @school.website, target: "_blank" %></p>

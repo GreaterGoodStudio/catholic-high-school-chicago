@@ -3,7 +3,7 @@ ActiveAdmin.register School do
   config.sort_order = "name_asc"
   menu priority: 1
 
-  permit_params :id, :name, :address, :phone, :website, 
+  permit_params :id, :name, :address, :display_address, :phone, :website,
     :tuition_cost, :tuition_link, :shadowing_link,
     :transportation_bus, :transportation_l, :transportation_metra, :transportation_options,
     translations_attributes: [
@@ -48,7 +48,8 @@ ActiveAdmin.register School do
   form do |f|
     f.inputs do
       f.input :name
-      f.input :address, input_html: { rows: 3 }
+      f.input :address, input_html: { rows: 3 }, hint: "The address that sets the pin on the map"
+      f.input :display_address, input_html: { rows: 3 }, label: "Display address (optional)", hint: "Use this field if you need to add text to the address that might break the map. e.g., (Entrance, Parking)"
       f.input :phone
       f.input :website
       f.input :tuition_link
