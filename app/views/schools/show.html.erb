@@ -21,7 +21,7 @@
   <section>
     <%= image_tag "schools/#{@school.slug}.png", alt: "#{@school.name} logo", class: "icon" %>
     <div class="content">
-      <%= @school.description %>
+      <%= simple_format @school.description %>
 
       <% if @school.application.blank? %>
       <p class="red note"><%= t("schools.extrance_exam_note_html") %></p>
