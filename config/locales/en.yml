@@ -86,51 +86,68 @@ en:
         - Restorative Justice Programs
         - Corporate Work Study Program
     programming_academic:
-      label: Academic programming
+      label: Academic/Extracurricular Programming
       options:
-        - IB Program
-        - AP Art History
-        - AP Biology
-        - AP Calculus
-        - AP Chemistry
-        - AP Chinese
-        - AP Computer Science
-        - AP Economics
-        - AP English
-        - AP Environmental Studies
-        - AP European History
-        - AP French
-        - AP German
-        - AP Government and Politics
-        - AP Human Geography
-        - AP Italian
-        - AP Japanese
-        - AP Latin
-        - AP Music Theory
-        - AP Physics
-        - AP Psychology
-        - AP Spanish
-        - AP Statistics
-        - AP Studio Art
-        - AP United States History
-        - AP World History
+        # - IB Program
+        # - AP Art History
+        # - AP Biology
+        # - AP Calculus
+        # - AP Chemistry
+        # - AP Chinese
+        # - AP Computer Science
+        # - AP Economics
+        # - AP English
+        # - AP Environmental Studies
+        # - AP European History
+        # - AP French
+        # - AP German
+        # - AP Government and Politics
+        # - AP Human Geography
+        # - AP Italian
+        # - AP Japanese
+        # - AP Latin
+        # - AP Music Theory
+        # - AP Physics
+        # - AP Psychology
+        # - AP Spanish
+        # - AP Statistics
+        # - AP Studio Art
+        # - AP United States History
+        # - AP World History
+        # - Vocational Training
+        # - Online Classes
+        # - Summer School
+        # - Credit Recovery
+        # - Dual Enrollment or Credit
+        # - Study Abroad
+        # - Service Learning
+        - AP/IB Classes
+        - Spanish
+        - Latin
+        - French
+        - Chinese/Mandarin
+        - Other Languages
+        - Precalculus/Calculus
+        - Statistics
+        - Physics
+        - Psychology
+        - Economics/Business
+        - Engineering
+        - Art
+        - Music
+        - Computer Science
         - Vocational Training
         - Online Classes
-        - Summer School
         - Credit Recovery
         - Dual Enrollment or Credit
         - Study Abroad
         - Service Learning
-    programming_extracurricular:
-      label: Extracurricular programming
-      options:
         - Drama
         - Choir/Chorus
         - National Honor Society
         - STEM Clubs
         - Coding
         - Robotics
-        - Art
         - Band/Orchestra
         - Foreign Language
         - Student Government
@@ -144,6 +161,7 @@ en:
         - Bowling
         - Cheerleading
         - Diving
+        - E-Sports
         - Fencing
         - Fishing
         - Flag Football
