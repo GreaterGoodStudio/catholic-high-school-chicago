@@ -86,34 +86,22 @@ en:
         - Restorative Justice Programs
         - Corporate Work Study Program
     programming_academic:
-      label: Academic programming
+      label: Academic/Extracurricular programming
       options:
-        - IB Program
-        - AP Art History
-        - AP Biology
-        - AP Calculus
-        - AP Chemistry
-        - AP Chinese
-        - AP Computer Science
-        - AP Economics
-        - AP English
-        - AP Environmental Studies
-        - AP European History
-        - AP French
-        - AP German
-        - AP Government and Politics
-        - AP Human Geography
-        - AP Italian
-        - AP Japanese
-        - AP Latin
-        - AP Music Theory
-        - AP Physics
-        - AP Psychology
-        - AP Spanish
-        - AP Statistics
-        - AP Studio Art
-        - AP United States History
-        - AP World History
+        - AP
+        - IB
+        - Spanish
+        - Latin
+        - French
+        - Chinese
+        - Calculus
+        - Statistics
+        - Physics
+        - Psychology
+        - Economics
+        - Art History
+        - Music Theory
+        - Computer Science
         - Vocational Training
         - Online Classes
         - Summer School

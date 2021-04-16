@@ -86,34 +86,22 @@ es:
         - Programas de Justicia Restaurativa
         - Programa de estudio de trabajo corporativo
     programming_academic:
-      label: Programación académica
+      label: Programación académica/estracurricular
       options:
-        - Programa IB
-        - Historia del arte AP
-        - Biología AP
-        - Cálculo AP
-        - Química AP
-        - Chino AP
-        - Ciencias de la Computación AP
-        - Economía AP
-        - Inglés AP
-        - Estudios Ambientales AP
-        - Historia Europea de AP
-        - Francés AP
-        - Alemán AP
-        - Gobierno y política de AP
-        - Geografía Humana AP
-        - Italiano AP
-        - Japonés AP
-        - Latin AP
-        - Teoría de la música AP
-        - Física AP
-        - Psicología AP
-        - Español AP
-        - Estadísticas AP
-        - Artee de Estudio AP
-        - Historia de los Estados Unidos AP
-        - Historia mundial AP
+        - AP
+        - IB
+        - Español
+        - Latin
+        - Francés
+        - Chino
+        - Cálculo
+        - Estadísticas
+        - Física
+        - Psicología
+        - Economía
+        - Historia del arte
+        - Teoría de la música
+        - Ciencias de la Computación
         - Entrenamiento vocacional
         - Clases en línea
         - Escuela de Verano
@@ -130,7 +118,6 @@ es:
         - Clubes STEM
         - Codificación
         - Robótica
-        - Arte
         - Banda / Orquesta
         - Idioma extranjero
         - Student Irvernment
