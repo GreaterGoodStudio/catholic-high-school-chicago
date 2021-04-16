@@ -27,7 +27,6 @@ ActiveAdmin.register School do
       :transportation_provided,
       :programming_support,
       :programming_academic,
-      :programming_ap,
       :programming_extracurricular,
       :programming_athletic
     ]
@@ -79,7 +78,6 @@ ActiveAdmin.register School do
         t.input :transportation_provided
         t.input :programming_support
         t.input :programming_academic
-        t.input :programming_ap
         t.input :programming_extracurricular
         t.input :programming_athletic
       end
