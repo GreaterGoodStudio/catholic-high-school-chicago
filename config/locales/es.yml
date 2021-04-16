@@ -88,60 +88,30 @@ es:
     programming_academic:
       label: Programación académica/estracurricular
       options:
-        # - Programa IB
-        # - Historia del arte AP
-        # - Biología AP
-        # - Cálculo AP
-        # - Química AP
-        # - Chino AP
-        # - Ciencias de la Computación AP
-        # - Economía AP
-        # - Inglés AP
-        # - Estudios Ambientales AP
-        # - Historia Europea de AP
-        # - Francés AP
-        # - Alemán AP
-        # - Gobierno y política de AP
-        # - Geografía Humana AP
-        # - Italiano AP
-        # - Japonés AP
-        # - Latin AP
-        # - Teoría de la música AP
-        # - Física AP
-        # - Psicología AP
-        # - Español AP
-        # - Estadísticas AP
-        # - Artee de Estudio AP
-        # - Historia de los Estados Unidos AP
-        # - Historia mundial AP
-        # - Entrenamiento vocacional
-        # - Clases en línea
-        # - Escuela de Verano
-        # - Recuperación de crédito
-        # - Inscripción doble o crédito
-        # - Estudiar en el Extranjero
-        # - Sevicio de aprendizaje
-        - Clases AP/IB
+        - AP
+        - IB
         - Español
         - Latin
         - Francés
-        - Chino/Mandarín
-        - Otros Idiomas
-        - Cálculo/Precálculo
+        - Chino
+        - Cálculo
         - Estadísticas
         - Física
         - Psicología
-        - Economía/Negocio
-        - Ingenieria
-        - Arte
-        - Music
-        - Computer Science
-        - Vocational Training
-        - Online Classes
-        - Credit Recovery
-        - Dual Enrollment or Credit
-        - Study Abroad
-        - Service Learning
+        - Economía
+        - Historia del arte
+        - Teoría de la música
+        - Ciencias de la Computación
+        - Entrenamiento vocacional
+        - Clases en línea
+        - Escuela de Verano
+        - Recuperación de crédito
+        - Inscripción doble o crédito
+        - Estudiar en el Extranjero
+        - Sevicio de aprendizaje
+    programming_extracurricular:
+      label: Programación estracurricular
+      options:
         - Drama
         - Coro
         - Sociedad Nacional de Honor
@@ -161,7 +131,6 @@ es:
         - Boliche
         - Porristas
         - Buceo
-        - E-Sports
         - Esgrima
         - Pesca
         - Fútbol de bandera

@@ -12,6 +12,9 @@
 
   <div class="search-filters">
     <% t(:search_filters).each do |facet, attrs| %>
+      <%# Hack to combine academics and extracurricular %>
+      <% next if facet == :programming_extracurricular %>
+      <%# End Hack %>
       <div class="form-group">
         <label><%= attrs[:label] %>:</label>
         <% attrs[:options].each_with_index do |option, index| %>
@@ -20,6 +23,16 @@
             <label for="<%= "translations_#{facet}_#{index}" %>"><%= option %></label>
           </div>
         <% end %>
+        <%# Hack to combine academics and extracurricular %>
+        <% if facet == :programming_academic %>
+          <% t(:search_filters)[:programming_extracurricular][:options].each_with_index do |option, index| %>
+            <div class="checkbox">
+              <input type="checkbox" id="<%= "translations_programming_extracurricular_#{index}" %>" name="<%= "q[translations_programming_extracurricular_cont_all][]" %>" value="<%= option %>" v-model="$store.state.query['<%= "translations_programming_extracurricular_cont_all" %>']">
+              <label for="<%= "translations_programming_extracurricular_#{index}" %>"><%= option %></label>
+            </div>
+          <% end %>
+        <% end %>
+        <%# End Hack %>
       </div>
     <% end %>  
   </div>
