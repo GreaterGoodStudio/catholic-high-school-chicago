@@ -23,6 +23,16 @@
     width: 8rem;
   }
 
+  .tos {
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
   @include desktop {
     ul {
       -js-display: flex;
