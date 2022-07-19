@@ -1,7 +1,7 @@
 <%= content_for :page_title, @school.name %>
 
 <article class="school">
-  <%= link_to "< #{t("schools.back")}", :back, class: "back" if request.referer.start_with?(search_url) %>
+  <%= link_to "< #{t("schools.back")}", :back, class: "back" if request.referer.try(:start_with?, search_url) %>
 
   <section>
     <school-map :zoom="14" :center="<%= @school.coordinates %>"></school-map>
