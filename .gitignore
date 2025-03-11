@@ -23,7 +23,7 @@
 .byebug_history
 
 .env
-/public/packs
+# /public/packs
 /public/packs-test
 /public/uploads
 /node_modules

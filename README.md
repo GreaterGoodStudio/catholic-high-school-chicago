@@ -20,7 +20,14 @@ Create a feature branch off of the `master` branch: `git checkout -b feature-nam
 
 ## Deploying
 
-To deploy to Heroku:
+Manually precompile assets (and commit them to the repo)
+
+```
+docker compose run app /bin/bash
+RAILS_ENV=production SECRET_KEY_BASE=DUMMY AWS_ACCESS_KEY_ID=DUMMY AWS_SECRET_ACCESS_KEY=DUMMY AWS_BUCKET=DUMMY bin/rails assets:precompile
+```
+
+Deploy to Heroku:
 
 ```
 git push heroku master

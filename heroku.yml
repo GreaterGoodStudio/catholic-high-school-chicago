@@ -1,0 +1,11 @@
+build:
+  docker:
+    web:
+      dockerfile: Dockerfile
+      target: prod
+release:
+  image: web
+  command:
+    - bin/rails db:migrate
+run:
+  web: bundle exec puma -C config/puma.rb
